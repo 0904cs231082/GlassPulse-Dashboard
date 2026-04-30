@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Dashboard - Day 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="dashboard-container">
+        <!-- sidebar -->
+         <aside class="sidebar glass">
+            <div class="logo">Dash.js</div>
+            <nav class="side-nav">
+                <div class="nav-item">🏠 Home</div>
+                <div class="nav-item">🏬 Stats</div>
+                <div class="nav-item">⚙ Settings</div>
+            </nav>
+
+         </aside>
+
+         <!-- header -->
+         <header class="header glass">
+            <div class="welcome-text">
+                <h2>Welcome Back, <span id="greeting">Hello</span>
+                    <span id="user-name">Developer</span>
+                <button id="edit-name-btn" style="background: none; border: none; cursor: pointer;font-size: 1rem;">✏🖊</button></h2>
+                <p id="live-clock">00:00:00</p>
+            </div>
+            <div class="header-right">
+                 <div class="search-box">
+                    <input type="text" id="search-input" placeholder="🔍 Seaarch tasks....">
+                </div>
+                <button id="theme-toggle" class="btn-icon">🌓 Toggle Theme</button>
+                <div class="user-profile">
+                    <div class="avatar">JS</div>
+                    <span>Developer</span>
+                </div>
+               
+            </div>
+
+         </header>
+
+          <!-- Main content -->
+
+         <main>
+            <div class="todo-section">
+                <h3>Strategic tasks</h3>
+
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="whats's your next big goal" required>
+                    <select id="task-category">
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Urgent">Urgent</option>
+                    </select>
+                    <button id="add-task-btn">Add Task</button>
+                </div>
+                <div class="empty-state" id="empty-message">🎉 All caught up! Enjoy your day.</div>
+                <div class="task-grid" id="task-container"></div>
+            </div>
+         </main>
+
+          <!--  Footer -->
+            <footer class="footer glass">
+                <p>@ 2026 My Glass Dashboard | Build With Grid & Glassmorphism</p>
+            </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
